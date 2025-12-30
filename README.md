@@ -1,4 +1,5 @@
-Custom Template입니다.
+Vite 7 + React 19 + TS + ESLint Custom Template입니다.
+Node >= 18, @ 지정 경로
 
 1. 해당 템플릿은 원격 저장소에 등록되어 있는 템플릿입니다.
     템플릿을 불러온 디렉토리 내부에 .git이 존재하면 안됩니다.

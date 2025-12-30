@@ -15,23 +15,56 @@ export default defineConfig([
 			js.configs.recommended,
 			...tseslint.configs.recommended,
 			reactHooks.configs.flat.recommended,
-			reactRefresh.configs.vite,
+			reactRefresh.configs.vite
 		],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',
-			globals: globals.browser,
+			globals: globals.browser
 		},
 		plugins: {
-			import: importPlugin,
+			import: importPlugin
 		},
 		rules: {
 			'no-unused-vars': 'off',
+
 			'@typescript-eslint/no-unused-vars': [
 				'error',
+
 				{ varsIgnorePattern: '^[A-Z_]' }
 			],
+
+			'react/react-in-jsx-scope': 'off',
+
+			'import/order': [
+				'warn',
+
+				{
+					groups: [
+						'builtin',
+						'external',
+						'internal',
+						'parent',
+						'sibling',
+						'index',
+						'object',
+						'type',
+					],
+
+					'newlines-between': 'always',
+
+					alphabetize: {
+						order: 'asc',
+						caseInsensitive: true,
+					},
+				},
+			],
+
+			'import/newline-after-import': 'warn',
+
+			'import/no-duplicates': 'warn'
 		},
+
 		settings: {
 			'import/resolver': {
 				typescript: {
@@ -39,5 +72,5 @@ export default defineConfig([
 				}
 			}
 		}
-	},
+	}
 ])
