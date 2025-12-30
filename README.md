@@ -1,16 +1,21 @@
-# React + Vite
+Custom Template입니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. 해당 템플릿은 원격 저장소에 등록되어 있는 템플릿입니다.
+    템플릿을 불러온 디렉토리 내부에 .git이 존재하면 안됩니다.
+    rmdir /s /q .git 를 진행하시기 바랍니다.
 
-Currently, two official plugins are available:
+2. git 중첩 여부와 원격 저장소 연결 상태를 반드시 확인하시기 바랍니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. package.json에 프로젝트 식별자를 변경하여 주시기 바랍니다.
 
-## React Compiler
+4. 변경이 완료되었다면 패키지 설치와 실행 테스트를 진행하여 주시기 바랍니다.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+5. /src/components/.gitkeep 더미 파일은 제거하셔도 됩니다.
 
-## Expanding the ESLint configuration
+6. 프로젝트에 적합한지 설정 파일을 반드시 확인하여 주시기 바랍니다.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+7. WebStorm으로 진행 시에는 반드시 실행-구성편집 단계에서 npm을 추가하여 실행하여 주시기 바랍니다.
+
+8. 완료되었다면 작업 전 pull&push를 진행하여 주시기 바랍니다.
+
+9. 감사합니다.
